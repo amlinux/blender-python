@@ -8,5 +8,5 @@ Create `yourscript.py` as usual:
 
 Run it in the blender environment:
 
-    docker run --rm -v $(pwd):/data amlinux/blender:latest ./yourscript.py
+    docker run --rm -v $(pwd):/data amlinux/blender-python:latest ./yourscript.py
 
