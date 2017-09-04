@@ -6,7 +6,7 @@ echo Preparing data...
 rm -rf archive
 mkdir archive
 cd archive
-for package in python3.5 python3.5-minimal libpython3.5 libpython3.5-minimal ; do
+for package in python3.5 python3.5-minimal libpython3.5 libpython3.5-minimal libpython3.5-stdlib python3-six ; do
 	for path in $(dpkg -L $package) ; do
 		if [ -f "$path" ] ; then
 			cp --parents "$path" .
